@@ -113,8 +113,8 @@ To explore the writeups locally:
 **Clone the repository:**
 
 ```bash
-git clone https://github.com/<your-username>/overthewire-bandit.git
-cd overthewire-bandit
+git clone https://github.com/drxv3/OverTheWire.git
+cd OverTheWire
 ```
 
 **Navigate to the level of interest:**
