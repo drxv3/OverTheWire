@@ -1,0 +1,48 @@
+
+The password for the next level (Bandit 2) is stored in a file called - (a single hyphen/dash) located right in the home directory.
+
+
+The Problem
+If you try to read it normally using cat -, the command will hang or just mimic what you type. In Linux, the - character is a special symbol that tells a command to read from Standard Input (stdin) instead of looking for a physical file name. 
+
+------------------------------
+
+Step-by-Step Solution## Step 1: Log into Bandit Level 1
+If you haven't already, log into Level 1 using the password you found in Level 0. Open your terminal and run:
+
+ssh bandit1@bandit.labs.overthewire.org -p 2220
+
+(Paste the password from Level 0 when prompted).
+
+
+Step 2: Verify the File Exists
+List the files in your current directory to verify the hyphen file is there:
+
+ls
+
+You will see a file simply named -.
+
+
+Step 3: Read the Dash File
+To bypass the special meaning of the hyphen, you must explicitly specify the file path. By adding ./ (which means "current directory"), you force Linux to treat it as a regular file name.
+Run this command:
+
+cat ./-
+
+
+
+Step 4: Grab the Password & Exit
+The terminal will print out an alphanumeric string (e.g., CV1DtqXWVFXTvM2F0k09SHz0YwRINYA9). Copy this string—it is your password for Level 2!
+Type exit to close the current session.
+
+
+------------------------------
+
+
+## Moving to Level 2
+Log back in as the next user using your newly acquired password:
+
+ssh bandit2@bandit.labs.overthewire.org -p 2220
+
+Did you successfully log into Bandit Level 2, or did you hit a connection/permission error? I can help you with the trick for handling spaces in filenames if you are ready for the next level!
+
