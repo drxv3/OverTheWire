@@ -28,3 +28,7 @@ To read the contents of the file to find the credential for the next level (band
 Command: cat readme
 
 What happens: The cat (concatenate) utility reads the file sequentially and prints its contents to your terminal screen. The output will display the password for Level 1.
+
+
+=================================================================================
+[The password you are looking for is: 6y2kwnwK6grgvwvpvLaa2T1cpFEKOhNR]
