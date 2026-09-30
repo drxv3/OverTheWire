@@ -1,0 +1,30 @@
+1. Establish the Connection
+To begin, you need to connect to the OverTheWire game server using an SSH client from your terminal:
+
+Command: ssh bandit0@bandit.labs.overthewire.org -p 2220
+
+What happens:
+
+ssh initiates a secure encrypted connection to the remote host.
+
+bandit0 specifies the username you are logging in as.
+
+bandit.labs.overthewire.org is the target server address.
+
+-p 2220 specifies the port number (since Bandit runs on port 2220 instead of the standard SSH port 22).
+
+Password: When prompted, enter the password bandit0 (note: characters will not show on the screen as you type them for security).
+
+2. Explore the Directory
+Once logged in, you will be placed inside your home directory.
+
+Command: ls (List directory contents)
+
+What happens: This command scans the current directory and reveals any files or folders present. For Level 0, you will typically see a single file named readme.
+
+3. Retrieve the Password
+To read the contents of the file to find the credential for the next level (bandit1):
+
+Command: cat readme
+
+What happens: The cat (concatenate) utility reads the file sequentially and prints its contents to your terminal screen. The output will display the password for Level 1.
